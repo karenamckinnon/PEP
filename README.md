@@ -21,7 +21,11 @@ In addition, the script reads from .mat files that contain GHCND data (rather th
 If you would like access to these .mat files, or information about how to produce them,
 please contact Karen McKinnon.
 
-We have also provided the time series of T95, which is produced from the daily station 
-data, as part of the supplementary information.
+We have also provided the time series of T95 (PEP-T95TimeSeries.txt), which is produced 
+from the daily station data. The .txt file can be found in the supplementary information,
+as well as in this github repo. Note that, in the codes, the .txt file is never called, 
+but you can use it in order to skip over some of the data processing steps. Also note that
+T95 is *technically* defined for all days of the year (and so the values are provided at
+daily resolution); however, all of our analysis only relies on the peak summer values.
 
 The code 'main.m' serves as a wrapper for the remainder of the subroutines.
