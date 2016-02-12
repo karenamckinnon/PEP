@@ -13,14 +13,16 @@ begin
 ; At command line, provide lagMin, lagMax, and hotdays filename
 
 ; Read in days that are to be composited on
-hotDaysfname = "/n/huybers_lab/common/ghcnd/analysis/ne-heatwaves/"+hotDaysFname
+cacheDir = "" ; ** put your cache directory here! **
+dataDir = "" ; ** put your data directory here! **
+hotDaysfname = cacheDir+hotDaysFname
 hotDays = asciiread(hotDaysfname,-1,"double")
 
 ; Load U and V
-uwnd_files = systemfunc("ls /n/huybers_lab/common/data/NCEP_R2/uwnd/uwnd.1979.2015.nc")
-vwnd_files = systemfunc("ls /n/huybers_lab/common/data/NCEP_R2/vwnd/vwnd.1979.2015.nc")
-hgt_files = systemfunc("ls /n/huybers_lab/common/data/NCEP_R2/hgt/hgt.*.nc")
-temp_files = systemfunc("ls /n/huybers_lab/common/data/NCEP_R2/air/air.*.nc")
+uwnd_files = systemfunc("ls " + dataDir + "/NCEP_R2/uwnd/uwnd.1979.2015.nc")
+vwnd_files = systemfunc("ls " + dataDir + "/NCEP_R2/vwnd/vwnd.1979.2015.nc")
+hgt_files = systemfunc("ls " + dataDir + "/NCEP_R2/hgt/hgt.*.nc")
+temp_files = systemfunc("ls " + dataDir + "/NCEP_R2/air/air.*.nc")
 fuwnd = addfiles(uwnd_files(0),"r")
 fvwnd = addfiles(vwnd_files(0),"r")
 fhgt = addfiles(hgt_files,"r")
