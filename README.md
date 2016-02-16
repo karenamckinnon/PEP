@@ -16,10 +16,12 @@ Karen McKinnon.
 Note that certain information (primarily directory paths) must be input into main.m and
 the .ncl scripts in order for them to run.
 
-In addition, the script reads from .mat files that contain GHCND data (rather than the 
-.txt files which are provided at http://www1.ncdc.noaa.gov/pub/data/ghcn/daily/.
-If you would like access to these .mat files, or information about how to produce them,
-please contact Karen McKinnon.
+In addition, the script reads from .mat files that contain GHCND data, rather than the 
+.dly files which are provided at http://www1.ncdc.noaa.gov/pub/data/ghcn/daily/ as a 
+compressed .tar file (ghcnd_all.tar.gz). The .dly files are plain text. We have provided
+two .dly files and our correspondingly processed .mat files so that the user can transform
+the .dly files to .mat files in similar forms if desired. If you would like further 
+information about how to process the .dly files in Matlab, please contact Karen McKinnon.
 
 We have also provided the time series of T95 (PEP-T95TimeSeries.txt), which is produced 
 from the daily station data. The .txt file can be found in the supplementary information,
