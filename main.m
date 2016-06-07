@@ -293,6 +293,7 @@ Cmat(2, :, :) = CNINO_NO88;
 	GHCND_clustered, fig_folder);
 
 %% Calculate and plot ROC scores per station
+cone_ratio = []; % no longer used
 roc_scoreStation = plotROCstations(GHCND_clustered, cutofflength, C, lag_range, lagsToPlot, ...
 	fig_folder, summerDays, yrs, summer_doy, cone_ratio, [predictandName 'Station']);
 
