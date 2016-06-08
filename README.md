@@ -13,6 +13,13 @@ it is unlikely that we have been 100% successful. If you are trying to use the c
 reproduce the results and have identified missing files or dependencies, please contact 
 Karen McKinnon.
 
+Some additional scripts not produced by the authors, but freely available online, are 
+used but not provided in this repository. These include:
+m_map
+cdfdate2num
+runmean
+lbmap
+
 Note that certain information (primarily directory paths) must be input into main.m and
 the .ncl scripts in order for them to run.
 
