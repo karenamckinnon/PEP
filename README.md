@@ -19,6 +19,7 @@ m_map
 cdfdate2num
 runmean
 lbmap
+rgb
 
 Note that certain information (primarily directory paths) must be input into main.m and
 the .ncl scripts in order for them to run.
